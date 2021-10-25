@@ -1,0 +1,105 @@
+.announcements{
+    .title{
+        color: #92F8FF;
+        font-weight: 800;
+        font-size: 14px;
+    }
+    .news{
+        overflow-y: scroll;
+        height: 160px;
+        padding-right: 10px;
+        .date{
+            color: #787878;
+            font-weight: 500;
+            font-size: 10px;
+            text-align: right;
+            border-bottom: 1px solid #373737;
+        }
+        p{
+            margin: 0;
+            margin-top: 10px;
+            padding: 0;
+            line-height: 15px;
+            color: #FFFFFF;
+            font-weight: 500;
+            font-size: 12px;
+        }
+    }
+}
+
+.log{
+    font-weight: 600;
+    font-size: 14px;
+    color: #434343;
+    p{
+        overflow-wrap: break-word;
+    }
+}
+
+.proxies{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    .buttons{
+        margin-top: 6px;
+        display: flex;
+        button{
+            color: #FFFFFF;
+            font-weight: 600;
+            font-size: 12px;
+            background: #131419;
+            border-radius: 5px;
+            border: 0;
+            height: 40px;
+            width: 100%;
+            margin-right: 3px;
+            margin-left: 3px;
+            &:first-child{
+                margin-left: 0px !important;
+            }
+            &:last-child{
+                margin-right: 0px !important;
+            }
+        }
+    }
+}
+
+.checkouts{
+    .title{
+        color: #FFFFFF;
+        font-weight: 800;
+        font-size: 14px;
+        text-align: center;
+    }
+    .checks{
+        overflow-y: scroll;
+        height: 290px;
+        padding-right: 10px;
+    }
+}
+
+.add-plan{
+    cursor: pointer;
+    border: 1.5px dashed #323232;
+    background: transparent !important;
+    border-radius: 5px;
+    height: 100%;
+    display: flex;
+    &:hover{
+        span{
+            color: white;
+        }
+    }
+    img{
+        margin: auto;
+        margin-right: 5px;
+    }
+    span{
+        margin: auto;
+        color: #6B6B6C;
+        margin-left: 5px;
+        font-weight: 600;
+        font-size: 14px;
+        transition: .3s ease;
+    }
+}

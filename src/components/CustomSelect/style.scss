@@ -1,0 +1,31 @@
+/*the container must be positioned relative:*/
+.custom-select {
+    position: relative;
+    cursor: pointer;
+    &.open{
+        border-radius: 5px !important;
+        background: #26272F url('../../assets/icons/arrow-up.svg') !important;
+        background-position: 95% center !important;
+        background-repeat: no-repeat !important;
+    }
+}
+
+/*style items (options):*/
+.select-items{
+    position: absolute;
+    background: #07080D;
+    top: calc(100% - 3px);
+    padding-top: 5px;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    max-height: 180px;
+    overflow-y: scroll;
+    div{
+        padding: 10px 22px;
+        &:hover{
+            background: hsl(231, 100%, 1%);
+        }
+    }
+}
+

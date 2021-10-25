@@ -1,0 +1,74 @@
+.checkout-item{
+    display: flex;
+    width: 100%;
+    padding-bottom: 0.5em;
+    .icon{
+        margin-right: 10px;
+        background: #07080D;
+        border-radius: 5px;
+        width: 38px;
+        height: 40px;
+        display: flex;
+        img{
+            margin: auto
+        }
+    }
+    .title-date{
+        display: flex;
+        flex-direction: column;
+        .title{
+            font-weight: bold;
+            font-size: 12px;
+            color: #787878;
+        }
+        .date{
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 15px;
+            color: #787878;
+        }
+    }
+    .invoice{
+        margin: auto 0 auto auto;
+        background: #07080D;
+        border-radius: 5px;
+        display: flex;
+        height: fit-content;
+        padding: 9px;
+        cursor: pointer;
+        img{
+            margin: auto 5px auto 0px;
+        }
+        span{
+            margin: auto 0px;
+            color: #797979;
+            font-weight: 600;
+            font-size: 12px;
+            transition: .3s;
+        }
+        &:hover{
+            span{
+                color: white;
+            }
+        }
+    }
+    .price{
+        margin: auto 0 auto auto;       
+        color: #C8FFAE;
+        font-weight: 800;
+        font-size: 14px;
+    }
+    &.with-invoice{
+        .price{
+            margin-left: 35px !important;
+        }
+        .title-date .title{
+            color: #92F8FF;
+            font-weight: 600;
+            font-size: 14px;
+        }
+        .title-date .date{
+            color: #5F5F5F;
+        }
+    }
+}

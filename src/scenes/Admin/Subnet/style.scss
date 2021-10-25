@@ -1,0 +1,130 @@
+.admin {
+    font-family: Montserrat;
+    .content .dashboard-card .subtitle {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        color: #92F8FF;
+        padding-left: 9px;
+    }
+    .btn-card {
+        background: #07080D;
+        border-radius: 5px;
+        color: #FFFFFF;
+        height: 40px;
+        font-weight: 600;
+        font-size: 12px;
+        outline: 0px;
+        border: 0px;
+        transition: .3s;
+        &:hover {
+            color: #ABABAB;
+        }
+        width: 127px;
+        height: 44px;
+        margin-left: 10px !important;
+        margin-top: 25px;
+    }
+    .subnetoverview {
+        height: auto;
+        .table-container {
+            margin-top: 30px;
+            height: 220px;
+            overflow-y: scroll;
+        }
+    }
+    .overview {
+        border-spacing: 0 40px;
+        table-layout: auto;
+        width: 90%;
+        padding: 10px;
+        text-align: center;
+        th {
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 15px;
+            color: #FFFFFF;
+            padding-bottom: 10px;
+            padding-top: 10px;
+        }
+        td {
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 15px;
+            color: #6F6F6F;
+            margin-bottom: 30px;
+        }
+        .td-free {
+            color: #ABE432;
+            width: 53px;
+            height: 35px;
+            border-radius: 5px;
+            background-color: #07080D;
+        }
+        .td-Status {
+            height: 35px;
+            width: 106px;
+            border-radius: 5px;
+            background-color: #07080D;
+        }
+    }
+}
+
+.sitelist {
+    .subtitle {
+        padding-left: 0 !important;
+    }
+}
+
+.unbanned {
+    background-color: #07080D;
+    height: 195px;
+    padding: 5px 0 0 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.ban-btn {
+    background-color: #131419;
+    color: #B7E82E;
+    width: 97px;
+    height: 28px;
+    border: none;
+    margin-right: 10px;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+.unban-btn {
+    background-color: #131419;
+    color: #E51F1F;
+    width: 97px;
+    height: 28px;
+    border: none;
+    margin-right: 10px;
+    font-size: 12px;
+}
+
+.banned {
+    background-color: #07080D;
+    height: 139px;
+    padding: 5px 0 0 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.case {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.add-subnet {
+    margin-bottom: 20px;
+}

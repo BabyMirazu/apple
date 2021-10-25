@@ -1,0 +1,40 @@
+.main-navbar{
+    display: flex;
+    width: 100%;
+    .current-user{
+        position: relative;
+        width: 245px;
+        height: 40px;
+        .info{
+            background: #13141A;
+            border-radius: 5px;
+            width: 245px;
+            height: 33px;
+            position: absolute;
+            z-index: 10;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            .balance{
+                margin: auto;
+                margin-left: 20px;
+                color: #92F8FF;
+                font-weight: 600;   
+                font-size: 14px;
+            }
+            .name{
+                margin: auto;
+                margin-right: 10px;
+                font-weight: 800;
+                font-size: 14px;
+                color: white;
+            }
+        }
+        img{
+            position: absolute;
+            z-index: 11;
+            left: 45%;
+            transform: translateX(-50%);
+        }
+    }
+}

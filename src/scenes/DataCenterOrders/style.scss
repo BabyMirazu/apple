@@ -1,0 +1,173 @@
+.datacenter-panel{
+    .title{
+        color: #92F8FF;
+        font-weight: bold;
+        font-size: 18px;
+        padding-left: 0px !important;
+        margin-left: 0px !important;
+    }
+    .content{
+        .group-input{
+            margin-top: 13px;
+            margin-bottom: 30px;
+            width: 250px;
+            padding-left: 0px !important;
+            margin-left: 0px !important;
+            .custom-select{
+                background: #131419 url('../../assets/icons/arrow-down.svg') !important;
+                background-position: 95% center !important;
+                background-repeat: no-repeat !important;
+                &.open{
+                    background: #26272F url('../../assets/icons/arrow-up.svg') !important;
+                    background-position: 95% center !important;
+                    background-repeat: no-repeat !important;
+                }
+            }
+        }
+    }
+}
+
+.justify-content-space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.main-table{
+    border-collapse:separate; 
+    border-spacing: 0 0px;
+    border-radius: 5px;
+    overflow-x: scroll;
+    max-width: 100%;
+    .complete{
+        color: #73FFB3;
+    } 
+    td, th{
+        background: #131419;
+        font-weight: bold;
+        font-size: 14px;
+        padding: 12px 25px;
+        text-align: center;
+        img{
+            cursor: pointer;
+        }
+        &:first-child{
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            text-align: left;
+        }
+        &:last-child{
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+    }
+    .devider td, .devider th{
+        background-color:#07080D !important;
+        padding: 4px 0px !important;
+    }
+    thead{
+        color: #92F8FF;
+    }
+    tbody{
+        color: white;
+    }
+    .cont{
+        overflow-x: scroll;
+        height: 160px;
+        padding-right: 12px;
+    }
+    .square-log{
+        background: #07080D !important;
+        border-radius: 5px;
+        width: 100%;
+        padding: 15px 20px;
+        text-align: left;
+        color: #5F5F5F;
+    }
+    .form-case{
+        vertical-align: top;
+    }
+    .form{
+        display: flex;
+        .btn{
+            background: #92F8FF;
+            border-radius: 5px;
+            height: 44px;
+            width: 80px;
+            border: 0px;
+            font-weight: 600;
+            font-size: 12px;
+            color: #000000;
+        }
+        input{
+            background: #07080D;
+            border-radius: 5px;
+            height: 44px;
+            width: 170px;
+            margin-right: 10px; 
+            font-weight: 600;
+            font-size: 12px;
+            color: #6F6F6F;
+            border: 0px;
+            padding-left: 15px;
+            &::placeholder{
+                color: #6F6F6F;
+                font-weight: 600;
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .justify-content-space-between {
+        display: block !important;
+        justify-content: space-between;
+    }
+    .d-flex{
+        flex-direction: column;
+        &>*{
+            margin-left: 0 !important;
+        }
+        .ms-auto{
+            margin-left: 0 !important;
+
+        }
+    }
+
+    .group-input{
+        width: 200px !important;
+    }
+
+    .datacenter-panel{
+        .title{
+            color: #92F8FF;
+            font-weight: bold;
+            font-size: 18px;
+            padding-left: 0 !important;
+            margin-left: 0 !important;
+        }
+        .content{
+            .group-input{
+                margin-top: 13px;
+                margin-bottom: 30px;
+                width: 250px;
+                padding-left: 0 !important;
+                margin-left: 0 !important;
+                .custom-select{
+                    background: #131419 url('../../assets/icons/arrow-down.svg') !important;
+                    background-position: 95% center !important;
+                    background-repeat: no-repeat !important;
+                    &.open{
+                        background: #26272F url('../../assets/icons/arrow-up.svg') !important;
+                        background-position: 95% center !important;
+                        background-repeat: no-repeat !important;
+                    }
+                }
+            }
+        }
+    }
+}

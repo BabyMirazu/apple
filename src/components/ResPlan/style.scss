@@ -1,0 +1,172 @@
+.res-plan{
+    .fade-in{
+        display: flex;
+        flex-direction: column;
+    }
+    .top{
+        display: flex;
+        width: 100%;
+        .icon{
+            margin-right: 20px;
+            background: #07080D;
+            border-radius: 5px;
+            width: 38px;
+            height: 40px;
+            display: flex;
+            img{
+                margin: auto
+            }
+        }
+        .title-date{
+            display: flex;
+            flex-direction: column;
+            .title{
+                color: #FFFFFF;
+                font-weight: 800;
+                font-size: 14px;
+            }
+            .date{
+                font-weight: 600;
+                font-size: 12px;
+                color: #6B6B6C;
+            }
+        }
+        .show-more{
+            margin: auto 0 auto auto;
+            cursor: pointer;
+        }
+        .title{
+            font-weight: bold;
+            font-size: 14px;
+            color: white;
+            margin: auto 0;
+        }
+        .close{
+            margin: auto 0 auto auto;
+            width: 24px;
+            height: 24px;
+            background-image: url("../../assets/icons/close.svg");
+            background-repeat: no-repeat;
+            cursor: pointer;
+            transition: .3s;
+            &:hover{
+                opacity: 0.7;
+            }
+        }
+    }
+    .middle{
+        margin: auto 0;
+        display: flex;
+        flex-direction: column;
+        .group-input{
+            display: block;
+            width: 90%;
+            margin: 0 auto;
+            .text{
+                color: #787878 !important;
+                font-weight: 600 !important;
+                font-size: 12px !important;
+            }
+        }
+        .top-up-group{
+            display: flex;
+            flex-direction: row;
+            input{
+                width: 100%;
+                margin-top: 5px;
+                margin-right: 5px;
+            }
+        }
+        button{
+            background: #07080D;
+            border-radius: 5px;
+            color: #92F8FF;
+            height: 40px;
+            border: 0;
+            margin-top: 5px;
+            width: 96px;
+            font-weight: 600;
+            font-size: 12px;
+            transition: .3s;
+            &:hover{
+                background: #010200;
+            }
+        }
+        .middle-icon {
+            display: flex;
+            justify-content: center;
+        }
+        .success-content{
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            color: #FFFFFF;
+            font-weight: 800;
+            font-size: 14px;
+        }
+        .success-icon{
+            width: 44px;
+            height: 44px;
+        }
+    }
+    .bottom{
+        margin-top: auto;
+        .progress-bar{
+            width: 100%;
+            background: #000000;
+            border-radius: 5px;
+            .progress{
+                width: 80%;
+                height: 7px;
+                border-radius: 5px;
+                background: #92F8FF;
+                animation: progressBar 1s ease-in-out;
+                animation-fill-mode:both; 
+            }
+        }
+        .data{
+            display: flex;
+            margin-top: 20px;
+            justify-content: space-between;
+            .used-data{
+                &:last-child{
+                    .size{
+                        text-align: right;
+                    }
+                }
+                .size{
+                    font-weight: bold;
+                    font-size: 12px;
+                    color: white;
+                }
+                .name{
+                    color: #787878;
+                    font-weight: 600;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+.options-pop-over{
+    padding: 15px 0px;
+    border-radius: 5px;
+    .option{
+        padding-top: 8px;
+        padding-bottom: 8px;
+        color: #797777;
+        transition: .3s;
+        font-weight: 600;
+        font-size: 14px;
+        cursor: pointer;
+        &:hover{
+            color: #FFFFFF;
+        }
+    }
+}
+
+@keyframes progressBar {
+    0% { width: 0; }
+    100% { width: 80%; }
+}

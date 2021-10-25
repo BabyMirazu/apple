@@ -1,0 +1,163 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.sidebar{
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    background: #131419;
+    .logo{
+        width: 100%;
+        display: flex;
+        a{
+            width: 80%;
+            margin: auto;
+            display: flex;
+            text-decoration: none;
+            img, h1{
+                margin: auto;
+            }
+            img{
+                height: 30px;
+                margin-right: 10px;
+            }
+            h1{
+                margin-left: 10px;
+                color: #FFFFFF;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 20px;
+                text-decoration: none;
+                letter-spacing: 0.32em;
+            }
+        }
+    }
+    .divider{
+        border: 1px solid #2D2E33;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px
+    }
+    ul{
+        list-style: none;
+        transition: .1s ease-in-out;
+        padding-left: 3rem !important;
+        a{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            text-decoration: none;
+        }
+        .icon{
+            margin-right: 15px;
+        }
+        .r-border{
+            margin-right: 0px;
+            margin-left: auto;
+            width: 4px;
+            background: $blue;
+            display: none;
+        }
+        li{
+            margin-right: 0px;
+            a{
+                height: 40px;
+                display: flex;
+                .icon, .title{
+                    margin-top: auto;
+                    margin-bottom: auto;
+                }
+
+            }
+            a, .title{
+                color: #5F5F5F;
+                font-weight: 600;
+                font-size: 14px;
+            }
+            &.active, &:hover{
+                a, .title{
+                    color: white;
+                    font-weight: 600;
+                    font-size: 14px;
+                }
+            }
+            &.active{
+                .r-border{
+                    display: block;
+                }
+            }
+        }
+    }
+    .logout-btn{
+        width: 70%;
+        background-color: #07080D;
+        border-radius: 5px;
+        display: flex;
+        cursor: pointer;
+        height: 50px;
+        &:hover{
+            span{
+                color: white;
+            }
+        }
+        img{
+            margin: auto;
+            margin-right: 13px;
+            margin-left: 55px;
+        }
+        span{
+            margin: auto;
+            margin-left: 13px;
+            color: #AFAFAF;
+            display: block;
+            font-weight: 600;
+            font-size: 14px;
+        }
+    }
+}
+
+@include mdMaxBreakPoint{
+    .sidebar{
+        width: 55px;
+        .logo{
+            img{
+                width: 80%;
+                margin: auto !important;
+            }
+            h1{
+                display: none;
+            }
+        }
+        .divider{
+            margin-bottom: 0 !important;
+        }
+        ul {
+            padding: 0 !important;
+            li{
+                margin-right: 0 !important;
+            }
+            .icon{
+                margin-right: auto !important;
+                margin-left: auto !important;
+                margin-bottom: 5px;
+                img{
+                    width: 28px;
+                }
+            }
+        }
+        .title, .r-border{
+            display: none !important;
+        }
+        .logout-btn{
+            span{
+                display: none;
+            }
+            img{
+                margin: auto;
+            }
+        }
+    }
+    
+
+}

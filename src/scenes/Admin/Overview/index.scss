@@ -1,0 +1,139 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+.card1 {
+    height: 550px;
+    background-color: #131419 !important;
+    padding: 21px;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+.overview-title1 {
+    color: #92f8ff;
+    font-size: 12px;
+    font-weight: bold;
+    font-style: normal;
+    font-family: Montserrat;
+    width: 100%;
+}
+
+.overview-title2 {
+    color: #6e6e6e;
+    font-size: 12px;
+    font-weight: bold;
+    font-style: normal;
+    font-family: Montserrat;
+    margin-top: 30px;
+}
+
+.box {
+    height: 352px;
+    margin-top: 15px;
+    margin-bottom: 28px;
+    background-color: #07080d;
+    border-radius: 5px;
+}
+
+.add {
+    background: #07080d;
+    color: white;
+    font-family: Montserrat;
+    font-size: 12px;
+    height: 44px;
+    font-weight: 600;
+    align-items: center;
+    border: 1px solid #07080d;
+    width: 140px;
+    border-radius: 5px;
+}
+
+.btn-group {
+    display: flex;
+    margin-top: -5px;
+}
+
+.delete {
+    background: #07080d;
+    color: white;
+    font-family: Montserrat;
+    font-size: 12px;
+    height: 44px;
+    font-weight: 600;
+    align-items: center;
+    border: 1px solid #07080d;
+    width: 140px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.header {
+    display: flex;
+}
+
+.overview .group-input .custom-select {
+    background: #07080d url('../../../assets/icons/arrow-down.svg') !important;
+    margin-top: -20px;
+}
+
+.overview-content2 {
+    height: 250px;
+    overflow: auto;
+}
+
+.overview-content1 {
+    overflow: auto;
+    height: 260px;
+}   
+
+.month {
+    font-size: 9px;
+    font-weight: 600;
+    font-family: Montserrat;
+}
+
+.price {
+    font-family: Montserrat;
+    font-weight: 600 !important;
+    font-style: normal;
+    color: #92F8FF;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.plan {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 10px;
+    font-family: Montserrat;
+    font-weight: 600;
+    color: white;
+}
+
+.plan-title {
+    margin-bottom: 20px;
+    font-size: 9px;
+    font-family: Montserrat;
+    font-weight: bold;
+    color: #6e6e6e;
+}
+
+.quantity {
+    margin-top: 30px;
+    font-size: 10px;
+    font-family: Montserrat;
+    font-weight: 600;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+.quantity-title {
+    margin-bottom: 20px;
+    font-size: 9px;
+    font-family: Montserrat;
+    font-weight: bold;
+    color: #6e6e6e;
+    display: flex;
+    justify-content: center;
+}
